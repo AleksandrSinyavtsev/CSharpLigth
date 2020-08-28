@@ -6,10 +6,11 @@ namespace crystal_store
     {
         static void Main(string[] args)
         {
-            int goldCount = 100;
             int crystalPrice = 15;
-            int crystalCount = 5;
-                if (goldCount - crystalPrice * crystalCount >= 0)
+            int goldCount = Console.ReadLine("Введите количество золота: ");
+            int crystalCount = Console.ReadLine("Сколько кристалов вы хотите купить?: "); ;
+
+            if (goldCount - crystalPrice * crystalCount >= 0)
             {
                  Console.WriteLine("Вы купили " + crystalCount + 
                      " кристаллов, у вас осталось " + 
